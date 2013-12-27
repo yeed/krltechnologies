@@ -7,8 +7,8 @@ development:
   adapter: postgresql
   database: krltechnologies_development
   encoding: utf8
-  username: krltech
-  password: krltech
+  username: yogastudio
+  password: yogastudio
   pool: 5
   timeout: 5000
 
@@ -19,8 +19,8 @@ test:
   adapter: postgresql
   database: krltechnologies_test
   encoding: utf8
-  username: krltech
-  password: krltech
+  username: yogastudio
+  password: yogastudio
   pool: 5
   timeout: 5000
 
