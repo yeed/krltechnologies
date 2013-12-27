@@ -508,9 +508,7 @@ body .units.alpha {
   visibility: hidden;
 }
 /* Use clearfix class on parent to clear nested units,
-    or wrap each row of units in a
-<div class="row">
-  */
+    or wrap each row of units in a <div class="row"> */
 .clearfix:before,
 .clearfix:after,
 .flex_column:before,
@@ -530,9 +528,7 @@ body .units.alpha {
 .clearfix {
   zoom: 1;
 }
-/* You can also use a
-  <br class="clear" />
-  to clear units */
+/* You can also use a <br class="clear" /> to clear units */
 .clear {
   clear: both;
   display: block;
