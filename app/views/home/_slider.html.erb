@@ -9,7 +9,7 @@
             <h2>Responsive slider</h2>
             <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">With one to one swipe movement!</div>
           </div>
-          <div class="caption img-html5" data-animate="slideAppearLeftToRight" data-delay="200">
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="200">
             <%= image_tag "travelweb.png" %>
           </div>
           <div class="caption img-css3" data-animate="slideAppearLeftToRight">
@@ -23,8 +23,14 @@
             <h2>Twitter Boostrap</h2>
             <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Compatible!</div>
           </div>
-          <div class="caption img-bootstrap" data-animate="slideAppearDownToUp" data-delay="200">
-            <%= image_tag "cheerwine.png" %>
+          <div class="caption img-html5" style="margin-left: 20px;" data-animate="slideAppearUpToDown" data-delay="1000">
+            <img src="assets/jackys.jpg" style="margin-left: 15px; margin-top: 101px;">
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="600">
+            <img src="assets/jamaica.jpg" style="margin-left: -78px; margin-top: 30px;">
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="200">
+            <img src="assets/travelweb.jpg" style="margin-left: -169px; margin-top: -35px;">
           </div>
           <div class="caption img-twitter" data-animate="slideAppearUpToDown">
           </div>
@@ -32,11 +38,20 @@
       </li>
     </ul>
   </div>
-  <a class="slider-control left" href="#" data-jump="prev"><</a>
-  <a class="slider-control right" href="#" data-jump="next">></a>
+  <a class="slider-control left ls-nav-prev" href="#" data-jump="prev"><</a>
+  <a class="slider-control right ls-nav-next" href="#" data-jump="next">></a>
   <div class="pages">
     <a class="page" href="#" data-jump-to="1">1</a>
     <a class="page" href="#" data-jump-to="2">2</a>
   </div>
 </div>
 <!-- Responsive slider - END -->
+
+
+
+
+<script>
+$( document ).ready( function() {
+  $('.responsive-slider').responsiveSlider();
+});
+</script>
