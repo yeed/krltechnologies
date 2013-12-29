@@ -22,3 +22,7 @@ width: 14.2857%;
 }
 
 #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+
+.portfolio_main {
+padding-top: 88px;
+}
