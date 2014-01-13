@@ -29,9 +29,9 @@
           <%= image_tag "room.jpg", :style=> "width:100%" %>
           
           <div class="caption header" data-animate="slideAppearLeftToRight" data-delay="500" data-length="800" >
-            <h2 class="slidertext twslide" style="font-size:19px">Creators of TravelWeb Software</h2>
+            <h2 class="slidertext secondslide">Creators of TravelWeb Software</h2>
             <div class="caption img-html5" data-animate="slideAppearRightToLeft" data-delay="200">
-              <h2 class="slidertext bottomtext twslide" style="font-size: 18px;">Web Based Travel Operator Software</h2>
+              <h2 class="slidertext bottomtext secondslide">Web Based Travel Operator Software</h2>
             </div>
           </div>
 
@@ -53,9 +53,9 @@
           <%= image_tag "testtexture1.png", :style=> "width:100%" %>
           
           <div class="caption header" data-animate="slideAppearLeftToRight" data-delay="500" data-length="800" >
-            <h2 class="slidertext twslide" style="font-size:19px">Creators of TravelWeb Software</h2>
+            <h2 class="slidertext secondslide">Creators of TravelWeb Software</h2>
             <div class="caption img-html5" data-animate="slideAppearRightToLeft" data-delay="200">
-              <h2 class="slidertext bottomtext twslide" style="font-size: 18px;">Web Based Travel Operator Software</h2>
+              <h2 class="slidertext bottomtext secondslide">Web Based Travel Operator Software</h2>
             </div>
           </div>
 
@@ -87,7 +87,7 @@
 <script>
 $( document ).ready( function() {
   $('.responsive-slider').responsiveSlider({
-    autoplay: false,
+    autoplay: true,
     interval: 7000,
     transitionTime: 300
   });
@@ -113,19 +113,6 @@ $( document ).ready( function() {
   width: 300px;
 }
 
-
-.twslide
-{
-  width:331px;
-}
-
-.bottomtext.twslide
-{
-  width:331px;
-  font-size:14px!important;
-  margin-top: 61%;
-}
-
 .bottomtext
 {
   padding: 10px;
@@ -133,16 +120,67 @@ $( document ).ready( function() {
   margin-top: 66%;
   font-size: 15px;
 }
+
+.secondslide
+{
+  width:331px;
+  font-size:19px!important;
+}
+
+.bottomtext.secondslide
+{
+  width:331px;
+  font-size:14px!important;
+  margin-top: 61%;
+}
+
+@media (min-width: 961px) and (max-width: 1131px) {
+    .secondslide{
+      width:274px;
+      font-size:15px!important;
+    }
+    .bottomtext.secondslide{
+      width:274px;
+      font-size:13px!important;
+      margin-top: 72%;
+    }
+  }
+
+
 @media (min-width: 768px) and (max-width: 960px) {
-  .responsive-slider .slides ul li .slide-body .caption.header h2 {
-    font-size: 13px;
+  .slidertext
+  {
+    font-size: 17px;
     padding: 10px 5px;
     width:268px;
-    
   }
   .bottomtext 
   {
     font-size: 11px!important;
+    margin-top:53%;
+  }
+
+  .slidertext.secondslide
+  {
+    font-size: 13px!important;
+  }
+  .bottomtext.secondslide
+  {
+    margin-top: 52%;
+    width:268px;
   }
 }
+
+@media (max-width: 767px) {
+  .slidertext
+  {
+    display:none!important;
+  }
+  .slider-control
+  {
+    display:none!important;
+  }
+
+}
+
 </style>
