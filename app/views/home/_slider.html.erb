@@ -5,10 +5,10 @@
       <ul>
         <li>
         <div class="slide-body" data-group="slide">
-          <%= image_tag "test3.jpg" %>
+          <%= image_tag "test3.jpg", :style => "width:100%" %>
           
           <div class="caption header" data-animate="slideAppearLeftToRight" data-delay="500" data-length="800" >
-            <h2 class="slidertext secondslide" style="color:lightslategray">Creators of TravelWeb Software</h2>
+            <h2 class="slidertext secondslide" style="margin-left: 8%">Creators of TravelWeb Software</h2>
           </div>
 
           <div class="caption img-html5" style="top: 9.5%; right:10%" data-animate="slideAppearUpToDown" data-delay="200" data-length="800">
@@ -21,6 +21,25 @@
             <img src="assets/travelweb.jpg" style="margin-left: -58%; margin-top: 3%;">
           </div>
           <div class="caption img-twitter" data-animate="slideAppearUpToDown">
+          </div>
+        </div>
+      </li>
+<li>
+        <div class="slide-body" data-group="slide">
+          <%= image_tag "hqsitesfxleft.jpg", :style => "width:100%" %>
+
+          <div class="caption header" data-animate="slideAppearLeftToRight" data-delay="500" data-length="800" >
+              <h2 class="slidertext secondslide">High quality and functional websites</h2>
+          </div>
+
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="200" data-length="800">
+            <%= image_tag "travelweb2.png", :style => "margin-left: -63%; margin-top: -6%; padding:7%" %>
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearRightToLeft" data-delay="400" data-length="800">
+            <%= image_tag "cheerwinelp2.png", :style => "margin-left: -18%; margin-top: 19%; padding:9%" %>
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearLeftToRight" data-delay="600" data-length="800">
+            <%= image_tag "wwdip.png", :style => "margin-left: -106%; margin-top: 4%; padding:35%" %>
           </div>
         </div>
       </li>
@@ -41,7 +60,7 @@
 <script>
 $( document ).ready( function() {
   $('.responsive-slider').responsiveSlider({
-    autoplay: true,
+    autoplay: false,
     interval: 7000,
     transitionTime: 300
   });
@@ -49,8 +68,43 @@ $( document ).ready( function() {
 </script>
 
 <style>
-.sliderholder {
 
+
+@media (min-width: 1301px) and (max-width: 1480px) {
+  .responsive-slider .slides ul li .slide-body .caption.header h2 {
+    font-size: 37px;
+  }
 }
+
+@media (min-width: 1240px) and (max-width: 1300px) {
+  .responsive-slider .slides ul li .slide-body .caption.header h2 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1135px) and (max-width: 1239px) {
+  .responsive-slider .slides ul li .slide-body .caption.header h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 983px) and (max-width: 1134px) {
+  .responsive-slider .slides ul li .slide-body .caption.header h2 {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 884px) and (max-width: 983px) {
+  .responsive-slider .slides ul li .slide-body .caption.header h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 900px) {
+  .responsive-slider .slides ul li .slide-body .caption.header h2 {
+    font-size: 22px;
+  }
+}
+
 
 </style>
