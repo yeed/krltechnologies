@@ -12,19 +12,40 @@
           </div>
 
           <div class="caption img-html5" style="top: 9.5%; right:10%" data-animate="slideAppearUpToDown" data-delay="200" data-length="800">
-            <img src="assets/jackys.jpg" style="margin-left: -10%; margin-top: 24%;">
+            <img src="assets/jackys.png" class="shadowslideitem" style="margin-left: -10%; margin-top: 24%">
           </div>
           <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="600" data-length="800" style="right: 32%;top: 19%;">
-            <img src="assets/jamaica.jpg" style="margin-left: -39%; margin-top: 14%;">
+            <img src="assets/jamaicabanner.png" class="shadowslideitem" style="margin-left: -39%; margin-top: 14%">
           </div>
           <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="1000" data-length="800">
-            <img src="assets/travelweb.jpg" style="margin-left: -58%; margin-top: 3%;">
+            <img src="assets/travelwebbanner.png" class="shadowslideitem" style="margin-left: -58%; margin-top: 3%">
           </div>
           <div class="caption img-twitter" data-animate="slideAppearUpToDown">
           </div>
         </div>
       </li>
-<li>
+      <li>
+        <div class="slide-body" data-group="slide">
+          <%= image_tag "test7.jpg", :style => "width:100%" %>
+          
+          <div class="caption header" data-animate="slideAppearLeftToRight" data-delay="500" data-length="800" >
+            <h2 class="slidertext secondslide" style="margin-left: 8%">Trawelweb Software's Customers</h2>
+          </div>
+
+          <div class="caption img-html5" style="top: 9.5%; right:10%" data-animate="slideAppearUpToDown" data-delay="200" data-length="800">
+            <img src="assets/mlvbanner.png" class="shadowslideitem" style="margin-left: -10%; margin-top: 24%">
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="600" data-length="800" style="right: 32%;top: 19%;">
+            <img src="assets/kismetbanner.png" class="shadowslideitem" style="margin-left: -39%; margin-top: 14%">
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="1000" data-length="800">
+            <img src="assets/tgibanner.png" class="shadowslideitem" style="margin-left: -58%; margin-top: 3%">
+          </div>
+          <div class="caption img-twitter" data-animate="slideAppearUpToDown">
+          </div>
+        </div>
+      </li>
+      <li>
         <div class="slide-body" data-group="slide">
           <%= image_tag "hqsitesfxleft.jpg", :style => "width:100%" %>
 
@@ -52,13 +73,34 @@
           </div>
 
           <div class="caption img-html5" style="top: 9.5%; right:10%" data-animate="slideAppearUpToDown" data-delay="200" data-length="800">
-            <img src="assets/jackys.jpg" style="margin-left: -10%; margin-top: 24%;">
+            <img src="assets/mermersepeti3rd.png" class="shadowslideitem" style="margin-left: -10%; margin-top: 24%;">
           </div>
           <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="600" data-length="800" style="right: 32%;top: 19%;">
-            <img src="assets/jamaica.jpg" style="margin-left: -39%; margin-top: 14%;">
+            <img src="assets/mermersepeti2nd.png" class="shadowslideitem" style="margin-left: -39%; margin-top: 14%">
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="1000" data-length="800" style="top: 22%;">
+            <img src="assets/mermersepeti1st.png" class="shadowslideitem" style="margin-left: -58%; margin-top: 3%;">
+          </div>
+          <div class="caption img-twitter" data-animate="slideAppearUpToDown">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide-body" data-group="slide">
+          <%= image_tag "test8.jpg", :style => "width:100%" %>
+          
+          <div class="caption header" data-animate="slideAppearLeftToRight" data-delay="500" data-length="800" >
+            <h2 class="slidertext secondslide" style="margin-left: 8%">A Good Title For Cheerwine</h2>
+          </div>
+
+          <div class="caption img-html5" style="top: 9.5%; right:10%" data-animate="slideAppearUpToDown" data-delay="200" data-length="800">
+            <img src="assets/cheerwine3rdbanner.png" class="shadowslideitem" style="margin-left: -10%; margin-top: 24%;">
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="600" data-length="800" style="right: 32%;top: 19%;">
+            <img src="assets/cheerwine2ndbanner.png" class="shadowslideitem" style="margin-left: -39%; margin-top: 14%">
           </div>
           <div class="caption img-html5" data-animate="slideAppearUpToDown" data-delay="1000" data-length="800">
-            <img src="assets/travelweb.jpg" style="margin-left: -58%; margin-top: 3%;">
+            <img src="assets/cheerwine1stbanner.png" class="shadowslideitem" style="margin-left: -58%; margin-top: 3%;">
           </div>
           <div class="caption img-twitter" data-animate="slideAppearUpToDown">
           </div>
@@ -69,11 +111,7 @@
 
     <a class="slider-control left ls-nav-prev" href="#" data-jump="prev"><</a>
     <a class="slider-control right ls-nav-next" href="#" data-jump="next">></a>
-    <div class="pages">
-      <a class="page" href="#" data-jump-to="1">1</a>
-      <a class="page" href="#" data-jump-to="2">2</a>
-    </div>
-  </div>
+   </div>
 </div>
 <!-- Responsive slider - END -->
 
@@ -89,7 +127,9 @@ $( document ).ready( function() {
 </script>
 
 <style>
-
+.shadowslideitem{
+box-shadow: 0px 0px 20px -1px #d3d3d3;
+}
 
 @media (min-width: 1301px) and (max-width: 1480px) {
   .responsive-slider .slides ul li .slide-body .caption.header h2 {
