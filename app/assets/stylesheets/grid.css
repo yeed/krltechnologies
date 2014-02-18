@@ -570,6 +570,14 @@ div .av_one_half {
   margin-left: 6%;
   width: 47%;
 }
+div .av_one_half_alt {
+  margin-left: 6%;
+  width: 75%;
+}
+div .av_one_half_alt_second {
+  margin-left: 6%;
+  width: 18%;
+}
 div .av_three_fifth {
   margin-left: 6%;
   width: 57.599999999999994%;

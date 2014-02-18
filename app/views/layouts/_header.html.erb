@@ -8,10 +8,7 @@
 <div class="container" style="height: 88px; line-height: 88px;">
 
 	<strong class="logo bg-logo" style="max-width: 240px; width: auto;">
-		<a href="index" style="max-height: 88px;">
-			<%= image_tag "logo5.png", :title => "Krl Technologies", :style => "width: 240px; width: auto; max-height: 88px", :alt => "Krl Technologies" %>
-			
-		</a>
+		<%= link_to image_tag("logo5.png"), root_path, :style=> "width: 240px; width: auto; max-height: 88px" %>
 	</strong>
 
 	<nav class="main_menu" data-selectname="Select a page" role="navigation" itemscope="itemscope" itemtype="">
